@@ -2,7 +2,7 @@
 
 > A Vue.js, Vuex, and Firebase JS Project
 
-### This single page application allows for realtime persistent updates using Firebase JS. The app uses Bootstrap for frontend CSS styling and Vuex for state management. I will add feature components for updating and adding to the database along with Nuxt JS for routing examples.
+This single page application allows for realtime persistent updates using Firebase JS. The app uses Bootstrap for frontend CSS styling and Vuex for state management. I will add feature components for updating and adding to the database along with Nuxt JS for routing examples.
 
 ## Build Setup
 
