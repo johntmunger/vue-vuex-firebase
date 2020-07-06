@@ -1,8 +1,8 @@
 {
-  "name": "vue-vuex-firebase",
+  "name": "vue-vuex-localstorage",
   "version": "1.0.0",
   "description": "A Vue.js project",
-  "author": "tcstx <rsimmons@tcstx.com>",
+  "author": "johntmunger@gmail.com>",
   "private": true,
   "scripts": {
     "dev": "node build/dev-server.js",
