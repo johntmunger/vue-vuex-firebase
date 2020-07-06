@@ -1,14 +1,5 @@
 <template>
   <div class="album py-5 bg-light">
-    <!-- <form class="create">
-      <div>Album Name</div>
-      <input type="text" v-model="post.name" />
-      <div>Description</div>
-      <input type="text" v-model="post.text" />
-      <div>
-        <button v-on:click.prevent="postRecord">Persist to collection</button>
-      </div>
-    </form> -->
     <div class="container">
       <div class="row">
         <div class="col-md-4" v-for="album in returnObj" :key="album.id">
@@ -20,8 +11,9 @@
               <div class="d-flex justify-content-between align-items-center">
                 <div class="btn-group">
                 </div>
+                <!-- TODO:: Add Update functionality to the UI -->
                 <small class="text-muted">
-                  <button type="button" class="btn btn-sm btn-outline-secondary" v-on:click.prevent="deleteRecord(album.id)">Delete</button>
+                  <button type="button" class="btn btn-sm btn-outline-secondary" v-on:click.prevent="deleteRecord(album.id)">Update</button>
                 </small>
               </div>
             </div>

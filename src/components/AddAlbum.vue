@@ -1,5 +1,6 @@
 <template>
-  <div>
+<!-- TODO:: This component is currently muted functionality to be baked into the UI soon -->
+  <div class="add">
     <h3>Add Album to Collection</h3>
     <div class="add">
       <form @submit="onSubmit"> 

@@ -1,8 +1,8 @@
 # List Manager with Data Collections
 
-> A Vue.js, Vuex, Store Manager
+> A Vue.js, Vuex, Firebase JS
 
-This single page application allows for updates to the data collection, and will eventually persist to localStorage. The app uses Bootstrap for frontend CSS styling and Vuex for data and state management.
+This single page application is fetching a data collection from Firebase JS. There will eventually be UI components to allow users to add and update the collection. The app uses Bootstrap for frontend CSS styling and Vuex for data and state management.
 
 ## Build Setup
 

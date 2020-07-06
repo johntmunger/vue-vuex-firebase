@@ -2,17 +2,13 @@
   <main role="main">
     <section class="jumbotron text-center">
       <div class="container">
-        <h1>{{ allMessages.title }}</h1>
-        <p class="lead text-muted">{{ allMessages.description }}</p>
-        <p>
-          <a href="https://vuex-firebase-demo.firebaseio.com/messages" target="_blank" class="btn btn-primary my-2">Go to Firebase collection</a>
-          <!-- <a href="#" class="btn btn-secondary my-2">Add to the collection</a> -->
+        <h1>Vue.js and Vuex Firebase Demo</h1>
+        <p class="lead text-muted">
+          This single page application is fetching a data collection from Firebase JS. There will be UI components added allowing users to add and update the data collection. The app uses Bootstrap for frontend CSS styling and Vuex for data and state management.
         </p>
       </div>
     </section>
-
     <Albums />
-
   </main>
 </template>
 
