@@ -17,7 +17,7 @@
   export default {
     name: 'app',
     components: {
-      // AddAlbum,
+      // AddAlbum, TODO:: Add this functionality
       AppHeader,
       AppMain,
       Albums,

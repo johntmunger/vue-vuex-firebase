@@ -6,15 +6,17 @@
           <div class="card mb-4 shadow-sm">
             <img :src="require(`../assets/thumbnails/${album.name}.jpg`)" :alt="`${album.name}`" class="bd-placeholder-img card-img-top" width="50%" height="50%" >
             <div class="card-body">
-              <p class="card-text">{{ album.name }}</p>
+              <p class="card-text bold">{{ album.name | remove-underscore-capitalize }}</p>
               <p class="card-text">{{ album.text }}</p>
               <div class="d-flex justify-content-between align-items-center">
+                
+                <!-- TODO:: Add Update functionality to the UI
                 <div class="btn-group">
-                </div>
-                <!-- TODO:: Add Update functionality to the UI -->
                 <small class="text-muted">
                   <button type="button" class="btn btn-sm btn-outline-secondary" v-on:click.prevent="deleteRecord(album.id)">Update</button>
-                </small>
+                </small> 
+                </div> -->
+
               </div>
             </div>
           </div>
@@ -27,6 +29,12 @@
 <script>
 import { mapGetters, mapActions } from 'vuex';
 import axios from 'axios';
+import Vue from 'vue';
+
+// Custom filter
+Vue.filter('remove-underscore-capitalize', function(value) {
+  return value.replace(/(?:_| |\b)(\w)/g, function($1){return $1.toUpperCase().replace('_',' ');});
+});
 
 export default {
   name: "Albums",
@@ -87,6 +95,9 @@ export default {
   .row {
     margin-right: 0;
     margin-left: 0;
+  }
+  .bold {
+    font-weight: 500;
   }
 </style>
 
